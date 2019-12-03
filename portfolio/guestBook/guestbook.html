@@ -1,0 +1,158 @@
+
+
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <!--
+  Guest Book Validated
+  Author: Paul Garton
+  Date:   10/19/2019
+  Last Updated: 11/27/2019
+  Filename:   guestbook.html
+
+  -->
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap & Guest Book CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/guestbook.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <title>Guest Book Form</title>
+
+</head>
+<body>
+
+<div class="container" id="main">
+
+  <div class="jumbotron">
+    <h1 class="display-4">neuCam</h1>
+    <p class="lead">Please sign our guest book!</p>
+  </div>
+
+  <a id = "add" href="admin.php">Admin Summary</a>
+  <br>
+
+  <form id="guestbook-form" action="guestbookConfirmation.php" method="post">
+    <fieldset>
+      <legend>Contact</legend>
+      <div class="form-row col-md-10">
+        <div class="form-group col-md-3">
+          <label id="lbl_First Name" for="First Name">First Name</label>
+          <input type="text" class="form-control"
+                 id="First Name" name="firstName">
+        </div>
+
+        <div class="form-group col-md-3">
+          <label id="lbl_Last Name" for="Last Name">Last Name</label>
+          <input type="text" class="form-control"
+                 id="Last Name" name="lastName">
+        </div>
+
+        <div class="form-group col-md-3">
+          <label id = "lbl_Title" for="Title">Title</label>
+          <input type="text" class="form-control"
+                 id="Title" name="title">
+        </div>
+        <div class="form-group col-md-3">
+          <label id = "lbl_Company" for="Company">Company</label>
+          <input type="text" class="form-control"
+                 id="Company" name="company">
+        </div>
+        <div class="form-group col-md-3">
+          <label id = "lbl_linkedIn" for="linkedIn">linkedIn</label>
+          <input type="text" class="form-control"
+                 id="linkedIn" name="linkedIn">
+        </div>
+        <div class="form-group col-md-3">
+          <label id = "lbl_Email Address" for="Email Address">Email Address</label>
+          <input type="text" class="form-control"
+                 id="Email Address" name="emailAddress">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Comment</legend>
+      <div class="form-row col-md-10">
+        <div class="form-group col-md-12">
+          <label id="lbl_Add Comment" for="Add Comment">Add Comment</label>
+          <textarea class="form-control" id="Add Comment" name="comment"></textarea>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Mailing List</legend>
+      <div class="form-row col-md-12">
+        <div class="form-group col-md-4">
+          <input class="form-check-input" type="checkbox"
+                 value="mailingList" id="mailingList"
+                 name="mailingList">
+          <label id="lbl_mailingList" class="form-check-label" for="mailingList">
+            Please add me to your mailing list
+          </label>
+        </div>
+        <div id="formatting" class="col-md-7">
+          <div class="col-md-6">
+            <input class="form-check-input"
+                   type="radio" name="format"
+                   id="text" value="text" checked>
+            <label class="form-check-label" for="text">
+              Text Format
+            </label>
+          </div>
+          <div class="col-md-6">
+            <input class="form-check-input"
+                   type="radio" name="format"
+                   id="html" value="html">
+            <label class="form-check-label" for="html">
+              HTML Format
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend id="lHowMeet">How did we meet?</legend>
+      <div class="form-row col-md-10">
+        <div class="form-group col-md-3" id="blcMeetup">
+          <select class="form-control"
+                  id="howMeet" name="howMeet">
+            <option value="none">Select meetup context</option>
+            <option value="meetup">Meetup</option>
+            <option value="jobFair">Job Fair</option>
+            <option value="other">Other</option>
+            <option value="notYet">We haven't met yet</option>
+          </select>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+          <input type="text" placeholder="If Other enter details" class="form-control" id="otherInfo" name="otherInfo">
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="container" id="blkSubmit">
+      <button id="submit" type="submit" class="btn btn-primary">
+        Submit Guest Book Post
+      </button>
+    </div>
+
+  </form>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<!--
+  <script src="scripts/validation.js"></script>
+-->
+</body>
+</html>

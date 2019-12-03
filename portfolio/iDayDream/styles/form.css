@@ -1,0 +1,122 @@
+/*
+iDayDream form styles
+Original Author:    Dallas Sloan
+Last Modified by:   Elijah Maret
+Creation Date:      10/14/2019
+Last Modified Date: 10/30/2019
+Filename:           form.css
+*/
+
+
+@font-face { font-family: Questrial; src: url('Questrial-Regular.ttf'); }
+
+#background-denial {
+    color: red;
+}
+
+body {
+    font-family: Questrial;
+}
+
+.contain{
+    margin: auto;
+    padding: 12px;
+    border: 2px solid darkcyan;
+    border-radius: 4px;
+    width: 80%;
+}
+
+fieldset {
+    padding: 12px;
+    border: 2px solid darkcyan;
+    border-radius: 4px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+
+.jumbotron {
+    /* Ask if she has picture for background */
+    font: 14px Helvetica,Arial,sans-serif;
+    color: white;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5dabc823c0e45245a9c250cd/1571540738789-0OBC55VFXBB04JHC43BS/ke17ZwdGBToddI8pDm48kFyD7pzB8zoMIVY5aiUuFlp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0jG2lbcDYBOeMi4OFSYem8DMb5PTLoEDdB05UqhYu-xbnSznFxIRsaAU-3g5IaylIg/IMG_6263+%281%29.jpg?format=2500w");
+    background-color: #3a9fb6;
+}
+
+legend {
+    text-align: center;
+    width: auto;
+
+
+}
+
+#logo {
+    margin: 0 auto;
+}
+
+#non-youth-exp-comment{
+    display:none;
+}
+
+#other-hear-about-us{
+    display:none;
+}
+
+#other-text-roles{
+    display:none;
+}
+
+#skills-interest-comment{
+    display: none;
+}
+
+#submit {
+    background-color: black;
+    border-color: black;
+    border-radius: 0;
+    text-transform: uppercase;
+    vertical-align: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+#submit_welcome {
+    background-color: black;
+    border-color: black;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.underline {
+    border-bottom: 1px solid #999;
+}
+
+
+#other-hear-about-us{
+    display:none;
+}
+
+/* creating ethnicity textbox style for welcome page */
+
+#other-ethnicity-text{
+    display:none;
+}
+
+.jumbotron {
+    /* Ask if she has picture for background */
+    font: 14px Helvetica,Arial,sans-serif;
+    color: white;
+    background-color: #3a9fb6;
+}
+
+
+#weekend-text-div{
+    display: none;
+}
+
+
+#youth-exp-comment{
+    display: none;
+}

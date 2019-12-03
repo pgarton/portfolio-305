@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--
+  Dreamer Welcome Form
+  Original Author:    Paul Garton Dallas Sloan Elijah Maret
+  Last Modified by:   Paul Garton
+  Creation Date:      10/23/2019
+  Last Modified Date: 10/26/2019
+  Filename:           welcome.html
+  -->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5dabc823c0e45245a9c250cd/1571544129492-S9RDI79OWVWOWVJEJG7E/ke17ZwdGBToddI8pDm48kJycfsYb1urLU93EpFqOTQmoCXeSvxnTEQmG4uwOsdIceAoHiyRoc52GMN5_2H8Wp7zww8OjRrqjaM7_0x6HDLp42EP6IAa5vAmscK3sHI4MkNL5tmfZ3otlI9yi1IzH2Q/favicon.ico">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/validate.css">
+  <title>Welcome — iD.A.Y. Dream</title>
+</head>
+<body>
+
+<!-- simple header taken from IDayDream.org -->  <!-- Elijah Edit -->
+<header id="header">
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Dreamer Welcome Form</h1>
+  </div>
+</header>
+
+
+
+
+<div class="container align-items-center">
+
+  <form action="welcomeConfirmation.php" method="post" id="welcomeForm">
+    <fieldset class="form-group">
+      <legend>Tell us about yourself</legend>
+      <!-- Form Field: First Name -->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="firstName">First Name *</label>
+          <input type="text" class="form-control" id="firstName" name="firstName">
+        </div>
+        <!-- Form Field: Last Name -->
+        <div class="form-group col-md-6">
+          <label for="lastName">Last Name *</label>
+          <input type="text" class="form-control" id="lastName" name="lastName">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <!-- Form Field: Home Phone -->
+          <label for="homePhone">Home Phone *</label>
+          <input type="tel" class="form-control" id="homePhone" name="homePhone" maxlength="30"
+                 placeholder="(XXX)XXX-XXXX">
+        </div>
+        <!-- Form Field: Email -->
+        <div class="form-group col-md-6">
+          <label for="email">Email *</label>
+          <input type="email" class="form-control" id="email" name="email" maxlength="40">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <!-- Form Field: Graduating Year -->
+          <label for="graduatingClass">Graduating Class *</label>
+          <select id="graduatingClass" name="graduatingClass" class="form-control">
+            <option value="none" selected>Please Select</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <label></label>
+        </div>
+        <div class="form-group col-md-6">
+          <!-- Form Field: College of Interest -->
+          <label for="college">College of Interest</label>
+          <input type="text" class="form-control" id="college" name="college">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="aspirations">Career Aspirations</label>
+          <!-- Form Field: Aspirations -->
+          <input type="text" class="form-control" id="aspirations" name="aspirations">
+        </div>
+        <div class="form-group col-md-6">
+          <!-- Form Field: Snacks -->
+          <label for="snacks">Favorite Food/Snacks</label>
+          <input type="text" class="form-control" id="snacks" name="snacks">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="birthdate">Birthdate *</label>
+          <!-- Form Field: Birthdate -->
+          <input type="date" class="form-control" id="birthdate" name="birthdate" placeholder="MM/DD/YYYY">
+        </div>
+        <div class="form-group col-md-4">
+          <!-- Form Field: Gender -->
+          <label for="gender">Gender *</label>
+          <select id="gender" class="form-control" name="gender">
+            <option value="none">Please Select</option>
+            <option value="1">M</option>
+            <option value="2">F</option>
+            <option value="3">Other</option>
+            <option value="4">Prefer not to Say</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="ethnicity">Ethnicity *</label>
+          <!-- Form Field: Ethnicity -->
+          <select id="ethnicity" name="ethnicity" class="form-control">
+            <option value="none" selected>Please Select</option>
+            <option value="1">American Indian or Alaska Native</option>
+            <option value="2">Asian or Asian American</option>
+            <option value="3">Black or African American</option>
+            <option value="4">Hispanic or Latino/a</option>
+            <option value="5">Middle Eastern or MENA</option>
+            <option value="6">Native Hawaiin or Other Pacific Islander</option>
+            <option value="7">Southeast Asian</option>
+            <option value="8">White non-Hispanic</option>
+            <option value="9">BI/Multiracial</option>
+            <option value="10">Other</option> <!-- Adding "Other" option with text box -->
+            <option value="11">Declined to State</option>
+          </select>
+          <!-- Other chosen Text-Box: Dallas Edit -->
+          <div id ="other-ethnicity" class="form-check-inline">
+            <div class="form-group">
+              <label for="other-ethnicity"></label>
+              <textarea class="form-control" id="other-ethnicity-text" name="otherEthnicity" placeholder="Other selected. Please explain" rows="3" cols="20"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <legend>Guardian Information</legend>
+      <!-- Form Field: Guardian Name -->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="guardianName">Guardian Name *</label>
+          <input type="text" class="form-control" id="guardianName" name="guardianName">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <!-- Form Field: Guardian Phone -->
+          <label for="guardianPhone">Guardian Phone *</label>
+          <input type="tel" class="form-control" id="guardianPhone" name="guardianPhone" maxlength="30"
+                 placeholder="(XXX)XXX-XXXX">
+        </div>
+        <!-- Form Field: Email -->
+        <div class="form-group col-md-6">
+          <label for="guardianEmail">Guardian Email *</label>
+          <input type="email" class="form-control" id="guardianEmail" name="guardianEmail" maxlength="40">
+        </div>
+      </div>
+    </fieldset>
+
+    <div class = "col text-center">
+      <button id="submit" type="submit" class="btn btn-primary">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src ="js/form.js"></script>
+<script src = "js/validate_welcome.js"></script>
+<script src = "js/welcome.js"></script>
+
+</body>
+</html>

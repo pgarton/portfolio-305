@@ -1,0 +1,11 @@
+body {
+    margin: auto;
+    width: 80%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: #3a9fb6;
+    padding: 10px;
+}

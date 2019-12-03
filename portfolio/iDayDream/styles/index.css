@@ -1,0 +1,31 @@
+.disabled {
+    color: grey;
+    opacity: .5;
+    pointer-events: none;
+}
+
+html {
+    text-align: center;
+}
+
+.jumbotron{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.sect {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    height: 150px;
+    border: 2px solid #3a9fb6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.sect > h2 {
+    margin: auto;
+}

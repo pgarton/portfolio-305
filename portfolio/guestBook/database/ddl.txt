@@ -1,0 +1,31 @@
+drop table if exists entries;
+
+CREATE TABLE entries (
+ id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ first_name varchar(50) NOT NULL,
+ last_name varchar(50) NOT NULL,
+ title varchar(50) DEFAULT NULL,
+ linked_in varchar(80) DEFAULT NULL,
+ email varchar(80) NOT NULL,
+ comment varchar(255) DEFAULT NULL,
+ add_to_mailing_list tinyint(4) DEFAULT '1',
+ format varchar(30) DEFAULT NULL,
+ how_we_met varchar(30) DEFAULT NULL,
+ meetup_other varchar(255) DEFAULT NULL,
+ created datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ last_updated datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);
+
+
+ insert into entries
+ values (null, 'Tina', 'Ostrander', 'Trapeze Artist', null, 'tina.j.ostrander@gmail.com', 'hello',
+	null, 'html', 'meetup', 'GreenRiver Tech', now(), now());
+
+drop table if exists login;
+CREATE TABLE login(
+id int(10) NOT NULL AUTO_INCREMENT primary key,
+username varchar(255) NOT NULL,
+password varchar(255) NOT NULL
+);
+
+
+insert into login values (null, 'admin', '@dm1n');

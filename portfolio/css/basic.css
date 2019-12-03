@@ -1,0 +1,12 @@
+.nounderline {
+  color:#000;
+  text-decoration: none;
+  background-color: none;
+}
+
+a, u {
+  text-decoration: none;
+  color:#000;
+}
+
+a:hover,a:visited { color:#000; }

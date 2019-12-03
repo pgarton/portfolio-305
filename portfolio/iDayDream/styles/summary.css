@@ -1,0 +1,47 @@
+/*
+iDayDream form styles
+Original Author:    Elijah Maret
+Last Modified by:   Elijah Maret
+Creation Date:      11/10/2019
+Last Modified Date: 11/10/2019
+Filename:           summary.css
+*/
+
+@font-face { font-family: Questrial; src: url('Questrial-Regular.ttf'); }
+#add {
+    color: white;
+    background-color: #3a9fb6;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Questrial;
+    width: 1600px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    background-color: #3a9fb6;
+    padding: 10px;
+}
+
+.contain{
+    margin: auto;
+    padding: 12px;
+    border: 2px solid darkcyan;
+    border-radius: 0px;
+    width: 1400px;
+}
+
+#toMail{
+     color: white;
+     background-color: #33cc33;
+     padding: 5px;
+     border-radius: 5px;
+ }
+
+#youth-table {
+    width: 100%;
+}
